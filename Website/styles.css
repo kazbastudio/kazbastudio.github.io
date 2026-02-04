@@ -1,0 +1,186 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* 1. Banner (hero) - easy to change background image or color */
+.banner {
+  height: 10vh;                    /* Adjust height here */
+  min-height: 400px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('images/Banner/Character Art Samples Website 1.png') center/cover no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro-image {
+  width: 100%;              /* Fits the width of its container */
+  max-width: 600px;         /* Prevents it from getting too wide */
+  height: auto;             /* Keeps proportions (no cropping!) */
+  margin-top: 20px;         /* Space above the image */
+  display: block;           /* Ensures it acts like a block (no inline weirdness) */
+  border-radius: 12px;      /* Optional: nice rounded corners to match design */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Optional: subtle shadow */
+}
+
+.featured-art-piece {
+  width: 100%;              /* Fits the width of its container */
+  max-width: 440px;         /* Prevents it from getting too wide */
+  height: auto;             /* Keeps proportions (no cropping!) */
+  margin-top: 20px;         /* Space above the image */
+  display: block;           /* Ensures it acts like a block (no inline weirdness) */
+  border-radius: 12px;      /* Optional: nice rounded corners to match design */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Optional: subtle shadow */
+}
+.banner-content h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-content p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+/* 2 & 3. Intro + Featured side by side */
+.intro-featured {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.introduction,
+.featured-art {
+  flex: 1;
+  min-width: 300px;
+}
+
+.introduction h2,
+.featured-art h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.introduction p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.featured-art img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.featured-art p {
+  margin-top: 1rem;
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
+
+/* Button style (used in intro) */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #e74c3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #c0392b;
+}
+
+/* 4. Services grid */
+.services {
+  max-width: 1200px;
+  margin: 100px auto 140px;   /* Extra bottom margin so it's not right at the bottom */
+  padding: 0 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  color: #2c3e50;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.service-item {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.service-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.service-item h3 {
+  padding: 20px 20px 8px;
+  font-size: 1.6rem;
+  color: #2c3e50;
+}
+
+.service-item p {
+  padding: 0 20px 24px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #2c3e50;
+  color: white;
+  font-size: 0.95rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .intro-featured {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .banner-content h1 {
+    font-size: 3rem;
+  }
+  .banner-content p {
+    font-size: 1.3rem;
+  }
+}
