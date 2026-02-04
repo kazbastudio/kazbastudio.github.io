@@ -30,20 +30,29 @@ body {
   max-width: 600px;         /* Prevents it from getting too wide */
   height: auto;             /* Keeps proportions (no cropping!) */
   margin-top: 20px;         /* Space above the image */
-  display: block;           /* Ensures it acts like a block (no inline weirdness) */
+  margin-bottom: 2rem;      /* adjust as needed – bigger gap after images */display: block;           /* Ensures it acts like a block (no inline weirdness) */
   border-radius: 12px;      /* Optional: nice rounded corners to match design */
   box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Optional: subtle shadow */
 }
 
 .featured-art-piece {
   width: 100%;              /* Fits the width of its container */
-  max-width: 440px;         /* Prevents it from getting too wide */
+  max-width: 370px;         /* Prevents it from getting too wide */
   height: auto;             /* Keeps proportions (no cropping!) */
   margin-top: 20px;         /* Space above the image */
   display: block;           /* Ensures it acts like a block (no inline weirdness) */
   border-radius: 12px;      /* Optional: nice rounded corners to match design */
   box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Optional: subtle shadow */
 }
+
+.hero-illustration-text {
+  max-width: 370px;         /* Prevents it from getting too wide */
+}
+
+.speculative-text  {
+  max-width: 370px;         /* Prevents it from getting too wide */
+}
+
 .banner-content h1 {
   font-size: 4rem;
   margin-bottom: 0.5rem;
