@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+h2 {
+  text-align: center;
+}
 body {
   font-family: 'Inter', system-ui, sans-serif;
   line-height: 1.6;
@@ -35,9 +37,45 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Optional: subtle shadow */
 }
 
+.Whatsapp-Button {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.Instagram-Button {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #C13584;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.TikTok-Button {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
 .featured-art-piece {
+  display: block;           /* ← very important – images are inline by default */
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;              /* Fits the width of its container */
-  max-width: 370px;         /* Prevents it from getting too wide */
+  max-width: 300px;         /* Prevents it from getting too wide */
   height: auto;             /* Keeps proportions (no cropping!) */
   margin-top: 20px;         /* Space above the image */
   display: block;           /* Ensures it acts like a block (no inline weirdness) */
@@ -45,8 +83,20 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Optional: subtle shadow */
 }
 
+p3 {
+  text-align: center;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero-illustration-text {
   max-width: 370px;         /* Prevents it from getting too wide */
+  text-align: center;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
 }
 
 .speculative-text  {
@@ -106,10 +156,16 @@ body {
 }
 
 /* Button style (used in intro) */
-.btn {
+
+.FollowMeOnSocialMedia {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.Whastapp-Button {
   display: inline-block;
   padding: 12px 28px;
-  background-color: #e74c3c;
+  background-color: #128C7E;
   color: white;
   text-decoration: none;
   border-radius: 6px;
