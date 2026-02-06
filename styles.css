@@ -19,7 +19,7 @@ body {
   height: 10vh;                    /* Adjust height here */
   min-height: 400px;
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url('images/Banner/Character Art Samples Website 1.png') center/cover no-repeat;
+              url('Subpages/images/Banner1.png') center/cover no-repeat;
   color: white;
   display: flex;
   align-items: center;
