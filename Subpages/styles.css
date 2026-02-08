@@ -19,7 +19,7 @@ body {
   height: 10vh;                    /* Adjust height here */
   min-height: 400px;
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url('images/Banner/Character Art Samples Website 1.png') center/cover no-repeat;
+              url('images/Banner1.png') center/cover no-repeat;
   color: white;
   display: flex;
   align-items: center;
@@ -57,6 +57,75 @@ body {
 
 .speculative-text  {
   max-width: 370px;         /* Prevents it from getting too wide */
+}
+.service-bar {
+  /*unused/ position: sticky;           /* stays visible when scrolling past it */
+  top: 0;                     /* sticks to top of viewport */
+  z-index: 900;               /* above most content */
+  
+  display: flex;
+  flex-wrap: wrap;            /* allows buttons to go to next row on small screens */
+  justify-content: center;    /* centers the whole group */
+  gap: 12px 16px;             /* space between buttons – horizontal & vertical */
+  
+  padding: 14px 20px;
+  background: rgba(20, 20, 35, 0.35);   /* lowered from 0.92 → much lighter */
+  /*unused/ background: rgba(20, 20, 35, 0.92);   /* semi-transparent dark bg */
+  backdrop-filter: blur(10px);
+  /*unused/ backdrop-filter: blur(10px);          /* frosted glass effect – very 2025 */
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+}
+
+.service-btn {
+  /* Base size – they stay roughly equal */
+  min-width: 140px;           /* minimum width – adjust as you like */
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);  /* shiny purple-indigo gradient */
+  border-radius: 12px;
+  box-shadow: 
+    0 4px 15px rgba(99, 102, 241, 0.4),   /* glow */
+    inset 0 1px 0 rgba(255,255,255,0.18); /* inner shine */
+  
+  transition: all 0.22s ease;
+  white-space: nowrap;        /* prevents text wrapping inside button */
+}
+
+.service-btn:hover,
+.service-btn:focus {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 
+    0 10px 30px rgba(99, 102, 241, 0.55),
+    inset 0 1px 0 rgba(255,255,255,0.3);
+  background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%); /* shift gradient on hover */
+}
+
+/* Optional: make it a bit smaller & tighter on mobile */
+@media (max-width: 768px) {   /* tablets & phones */
+  .service-bar {
+    padding: 10px 12px;           /* less vertical & horizontal padding */
+    gap: 8px 10px;                /* tighter spacing between buttons */
+  }
+  
+  .service-btn {
+    min-width: 110px;             /* was 140px → smaller */
+    padding: 8px 14px;            /* smaller padding inside button */
+    font-size: 13px;              /* readable but not huge */
+    border-radius: 10px;          /* slightly softer corners */
+  }
+}
+
+@media (max-width: 480px) {   /* small phones */
+  .service-btn {
+    min-width: 90px;              /* even smaller for very narrow screens */
+    padding: 7px 10px;
+    font-size: 12.5px;
+  }
 }
 
 h2, p {
