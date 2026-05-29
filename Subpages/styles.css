@@ -237,6 +237,47 @@ h2 {
   margin: 12px;
 }
 
+.contact-button {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  padding: 10px 16px;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  margin: 12px;
+}
+
+.contact-button {
+  position: fixed;
+  bottom: 24px;
+  left: 80%;
+  transform: translateX(-50%);
+  z-index: 900;
+  padding: 12px 28px;
+  background: rgba(37, 211, 102);
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 999px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.45);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  transition: all 0.18s ease;
+}
+
+.contact-button:hover {
+  background-color: #25D366;
+  transform: translateY(-1px);
+}
+
 .Sebarang-pertanyaan-sila-hubungi {
   align-items: center;
   justify-content: center;
